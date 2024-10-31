@@ -1,0 +1,5 @@
+sudo apt-get update && sudo apt-get upgrade -y
+sudo apt install mysql-server -y
+sudo git clone https://github.com/josejuansanchez/iaw-practica-lamp.git
+sudo rm -R /home/vagrant/iaw-practica-lamp/src
+sudo rm -R /home/vagrant/iaw-practica-lamp/README.md
