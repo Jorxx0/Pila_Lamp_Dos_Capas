@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "webserver" do |webserver|
     webserver.vm.hostname = "webserver"
     webserver.vm.network "public_network"
-    webserver.vm.network "forwarded_port", guest: 80, host: 9451
+    webserver.vm.network "forwarded_port", guest: 80, host: 8080
     webserver.vm.network "private_network", ip:"192.168.10.33", virtualbox__intnet: "red_datos"
     webserver.vm.provision "shell", path: "prov_web.sh"
   end

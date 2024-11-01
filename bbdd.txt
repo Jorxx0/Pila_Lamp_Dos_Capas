@@ -9,6 +9,5 @@ mysql -u root
 CREATE USER 'appgestion'@'192.168.10.33' IDENTIFIED BY 'appgestion1234.';
 GRANT ALL PRIVILEGES ON lamp_db.* TO 'appgestion'@'192.168.10.33';
 FLUSH PRIVILEGES;
-
 sudo sed -i "/^bind-address/c\bind-address = 192.168.10.34" /etc/mysql/mysql.conf.d/mysqld.cnf
 sudo systemctl restart mysql
